@@ -3,7 +3,11 @@
 
 ----------------
 
-This document explains the Rust code used to implement a Random Forest classifier that runs in the browser via WebAssembly (WASM). It's designed for developers familiar with scripting languages but new to Rust.
+This document explains the Rust code used to implement a Random Forest classifier that runs in the browser via WebAssembly (WASM). 
+
+**PURPOSE**: To ease programmers of other programming languages into Rust with a practical example (Random Forest in a local HTML page). It's not aimed to be a full complete working solution, but rather an illustrative example.
+
+**DISCLAIMER**: the code and part of the README were generated with LLM (Claude Sonnet v3.7 Extended Thinking at 22-May-2025) because the author at this point in time did not know Rust and wanted to see if it was a language worth learning for his field (machine learning). There migth be errors in the code and incorrect information in the guide.
 
 ## Contents
 1. [Rust Core Concepts](#rust-core-concepts)
@@ -234,14 +238,18 @@ rustup target add wasm32-unknown-unknown
 cargo install wasm-pack
 ```
 
-4. Create a new Rust project:
+----------------
+
+## Project overview
+
+1. Create a new Rust project:
 
 ```bash
 cargo new ml-rf-wasm
 cd ml-rf-wasm
 ```
 
-5. Update your cargo.toml to include the following dependencies:
+2. Update your cargo.toml to include the following dependencies:
 
 ```toml
 [package]
@@ -264,19 +272,15 @@ wasm-bindgen-futures = "0.4"
 wasm-bindgen-test = "0.3"
 ```
 
-----------------
+### Code Structure Overview
 
-## Code Structure Overview
-
-Our Rust code consists of:
+The Rust code consists of:
 
 1. **Imports** - External libraries and dependencies
 2. **Model Struct** - The `RandomForestModel` class that wraps SmartCore's implementation
 3. **WASM Integration** - Code to expose Rust functions to JavaScript
 4. **Helper Functions** - Utilities for data conversion, logging, etc.
 5. **Training & Prediction Logic** - The core machine learning functionality
-
-## Detailed Code Explanation
 
 ### Imports and Dependencies
 
