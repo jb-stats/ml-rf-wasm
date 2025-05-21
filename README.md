@@ -7,7 +7,7 @@ This document explains the Rust code used to implement a Random Forest classifie
 
 **PURPOSE**: To ease programmers of other programming languages into Rust with a practical example (Random Forest in a local HTML page). It's not aimed to be a full complete working solution, but rather an illustrative example.
 
-**DISCLAIMER**: the code and part of the README were generated with LLM (Claude Sonnet v3.7 Extended Thinking at 22-May-2025) because the author at this point in time did not know Rust and wanted to see if it was a language worth learning for his field (machine learning). There migth be errors in the code and incorrect information in the guide.
+**DISCLAIMER**: the code and part of the README were generated with LLM (Claude Sonnet v3.7 Extended Thinking at 22-May-2025) because the author at this point in time did not know Rust and wanted to see if it was a language worth learning for his field (machine learning). There might be errors in the code and incorrect information in the guide.
 
 ## Contents
 1. [Rust Core Concepts](#rust-core-concepts)
