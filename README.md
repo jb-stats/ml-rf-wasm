@@ -12,7 +12,7 @@ This document explains the Rust code used to implement a Random Forest classifie
 ## Contents
 1. [Rust Core Concepts](#rust-core-concepts)
 2. [Setting up Rust for first time](#rust-setup)
-2. [Code Structure Overview](#code-structure-overview)
+2. [Project Overview](#project-overview)
 3. [Detailed Code Explanation](#detailed-code-explanation)
 4. [JavaScript Integration](#javascript-integration)
 5. [Safety Analysis](#safety-analysis)
